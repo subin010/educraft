@@ -9,8 +9,8 @@
      <link rel="icon" type="image/x-icon" href="../assets/images/favicon/favicon.ico">
 
      <!-- TAILWIND CSS  -->
-     <link href="../dist/output.css" rel="stylesheet">
-     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+     <!-- <link href="../dist/output.css" rel="stylesheet"> -->
+     <script src="https://cdn.tailwindcss.com"></script>
 
      <!-- STYLE & CUSTOM CSS  -->
      <link rel="stylesheet" href="../assets/css/style.css" />
@@ -21,11 +21,58 @@
 
 <body class="body font-[Gilroy-Regular] text-sm box-border">
      <div class="scroll_smoother">
-          <header></header>
+          <header>
+               <nav id="navbar"
+                    class="navbar absolute top-0 left-0 flex items-center justify-between gap-[20px] w-full h-[20%] transition duration-300 pl-5 pr-5 sm:pl-10 sm:pr-10 md:pl-[6%] md:pr-[6%] z-50 bg-opacity-50">
+                    <div class="flex justify-between items-center gap-32">
+                         <div class="logo_animation">
+                              <div class="header_logo flex gap-2 justify-center items-center ">
+                                   <img class="w-[100px]" src="../assets/images/brand/logo.png" alt="">
+                              </div>
+                         </div>
+                         <div class="nav_items sm:flex items-center gap-8 text-md hidden">
+                              <a class="nav__links text-white h-[72px] grid place-items-center hover:text-[#1265D7] transition-all duration-200"
+                                   href="">Home</a>
+                              <a class="nav__links text-white h-[72px] grid place-items-center hover:text-[#1265D7] transition-all duration-200"
+                                   href="">Curriculam</a>
+                              <a class="nav__links text-white h-[72px] grid place-items-center hover:text-[#1265D7] transition-all duration-200"
+                                   href="">Classes</a>
+                              <a class="nav__links text-white h-[72px] grid place-items-center hover:text-[#1265D7] transition-all duration-200"
+                                   href="">About Us</a>
+                         </div>
+                    </div>
+                    <div class="flex justify-between items-center gap-8">
+                         <a class="nav__links text-white h-[72px] grid place-items-center hover:text-[#1265D7] transition-all duration-200"
+                              href="">Login</a>
+                         <a class="duration-300 p-2 rounded-full text-sm px-4 text-black bg-white hover:" href="">
+                              <span class="text-btn">Try it free</span>
+                         </a>
+                    </div>
+               </nav>
+               <div class="menu sm:hidden">
+                    <button class="nav-tgl" id="nav-tgl" type="button" aria-label="toggle menu">
+                         <span aria-hidden="true"></span>
+                    </button>
+                    <nav class="nav">
+                         <div class="side_viewer flex text-white justify-center items-center text-4xl" id="side_viewer">
+                              <ul class="flex flex-col gap-6">
+                                   <li class="link">Home</li>
+                                   <li class="link">Curriculam</li>
+                                   <li class="link">Classes</li>
+                                   <li class="link">About Us</li>
+                              </ul>
+                         </div>
+                    </nav>
+               </div>
+          </header>
           <main>
                <div class="content">
                     <section class="section section_1 flex justify-center items-center h-screen bg-white">
-                         <h1>Hero Section</h1>
+                         <div
+                              class="landing_wrapper h-[calc(100%_-_5%)] w-[calc(100%_-_2.5%)] bg-[#2A2635] rounded-[2rem]">
+
+                              <!-- <h1>Hero Section</h1> -->
+                         </div>
                     </section>
                     <section class="section section_2 flex justify-center items-center h-screen bg-white">
                          <h1>Second Section</h1>
