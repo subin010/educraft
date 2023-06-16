@@ -695,6 +695,10 @@ video {
   height: 10%;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -823,6 +827,10 @@ video {
   place-items: center;
 }
 
+.content-center {
+  align-content: center;
+}
+
 .items-center {
   align-items: center;
 }
@@ -942,6 +950,14 @@ video {
 
 .pt-\[8\%\] {
   padding-top: 8%;
+}
+
+.pt-\[10\%\] {
+  padding-top: 10%;
+}
+
+.pt-32 {
+  padding-top: 8rem;
 }
 
 .font-\[Poppins\] {
@@ -1074,6 +1090,20 @@ video {
   .xl\:w-full {
     width: 100%;
   }
+
+  .xl\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .xl\:text-\[4rem\] {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -1091,5 +1121,18 @@ video {
 
   .\32xl\:pr-20 {
     padding-right: 5rem;
+  }
+
+  .\32xl\:pt-\[12\%\] {
+    padding-top: 12%;
+  }
+
+  .\32xl\:pt-\[10\%\] {
+    padding-top: 10%;
+  }
+
+  .\32xl\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
   }
 }

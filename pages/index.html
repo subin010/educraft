@@ -26,7 +26,7 @@
      <div class="scroll_smoother mx-auto">
           <header class="max-w-screen-2xl mx-auto">
                <nav id="navbar"
-                    class="navbar absolute top-0 flex items-center justify-between gap-[20px] h-[10%] transition duration-300 pl-5 pr-5 sm:pl-10 sm:pr-10 md:pl-[6%] md:pr-[6%] 2xl:pl-20 2xl:pr-20  z-50 bg-opacity-50 w-full max-w-screen-2xl mx-auto">
+                    class="navbar absolute top-0 flex items-center justify-between gap-[20px] h-32 transition duration-300 pl-5 pr-5 sm:pl-10 sm:pr-10 md:pl-[6%] md:pr-[6%] 2xl:pl-20 2xl:pr-20  z-50 bg-opacity-50 w-full max-w-screen-2xl mx-auto">
                     <div class="flex justify-between items-center gap-32 max-w-screen-2xl">
                          <div class="logo_animation ">
                               <div class="header_logo flex gap-2 justify-center items-center relative">
@@ -84,33 +84,29 @@
                               </div>
                               <div class="bg-blur h-full backdrop-blur-[210px]">
                                    <div class="noice-bg h-full  overflow-hidden">
-                                        <div
-                                             class="wrapper-main flex pt-[8%] pl-20 pr-20 max-w-screen-2xl m-auto h-full">
+                                        <div class="wrapper-main flex pt-32 pl-20 pr-20 max-w-screen-2xl m-auto h-full">
                                              <div class="flex flex-col w-1/2 justify-between mb-5">
                                                   <div
-                                                       class="hero-tittle capitalize text-white text-6xl font-extrabold">
-                                                       <span class="whitespace-pre-line">a place
+                                                       class="hero-tittle capitalize text-white text-6xl xl:text-[4rem] 2xl:text-8xl font-extrabold">
+                                                       <h1 class="whitespace-pre-line">a place
                                                             every student
-                                                            should be.</span>
+                                                            should be.</h1>
                                                   </div>
-                                                  <div class="hero-subtitle text-white">
-                                                       <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                  <div class="hero-subtitle text-white text-base opacity-50">
+                                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                                             sed do
                                                             eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                                             Ut
                                                             enim ad
-                                                            minim veniam, quis nostrud exercitation. </span>
+                                                            minim veniam, quis nostrud exercitation. </p>
                                                   </div>
                                                   <div class="hero-btn flex gap-10 items-center relative">
-                                                       <div class="target">
-                                                            <a class="primary_bg hover:bg-secondary p-3 text-white text-lg font-bold rounded-full flex gap-3 justify-center items-center text"
-                                                                 href="">
-                                                                 <span>Learn More</span>
-                                                                 <span
-                                                                      class="rounded-full bg-opacity-40 bg-white w-7 h-7 flex justify-center items-center">
-                                                                      <i class="ri-arrow-right-line text-sm"></i></span>
-                                                            </a>
-                                                       </div>
+                                                       <a class="btn_md primary_bg" href="">
+                                                            <span>Learn More</span>
+                                                            <span
+                                                                 class="rounded-full bg-opacity-40 bg-white w-7 h-7 flex justify-center items-center">
+                                                                 <i class="ri-arrow-right-line text-sm"></i></span>
+                                                       </a>
                                                        <a href="" class="text-white text-base flex gap-2 items-center">
                                                             <span>See Video</span>
                                                             <i class="ri-play-circle-line text-xl"></i>
@@ -154,9 +150,49 @@
                          </div>
                     </section>
                     <section class="section section_2 flex justify-center items-center h-screen bg-white">
-                         <h1>Second Section</h1>
+                         <h1>Section 2</h1>
                     </section>
-                    <section class="section section_3"></section>
+                    <section class="section section_3 flex justify-center items-center h-screen content-center w-full flex-c overflow-hidden">
+                         <div class='contenitore-css-macbook'>
+                              <!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+
+                              <div class="css-macbook">
+                                   <div class="macbook-display-position">
+                                        <div class="macbook-display">
+                                             <div class="macbook-screen-position">
+                                                  <div class="macbook-screen">
+
+                                                       <video allowfullscreen
+                                                            poster="../assets/videos/educraft_1.gif"
+                                                            class="video-ux-design" playsinline="true"
+                                                            webkit-playsinline="true" muted="muted">
+                                                            <source
+                                                                 src="../assets/videos/hero.mp4"
+                                                                 id="sample" type="video/mp4">
+                                                       </video>
+                                                       <!-- <img src="https://unsplash.imgix.net/photo-1418479631014-8cbf89db3431?fit=crop&fm=jpg&h=500&q=75&w=800" alt="example image" /> -->
+                                                       <!-- Image By André Freitas from unsplash.com -->
+
+                                                       <!-- Youtube - don't forget to remove glare -->
+                                                       <!-- <iframe width="960" height="480" src="https://www.youtube.com/emacbooked/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+                                                       <!-- Notice: Youtube has some toruble with emacbooked players and gives consol errors -->
+
+                                                       <!-- Iframe, simple website - don't forget to remove glare -->
+                                                       <!-- <iframe src="http://example.com" frameborder="0"></iframe> -->
+
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="macbook-body"></div>
+                                   <div class="macbook-bottom-cover"></div>
+<div class="pa-hero-bg-overlay"></div>
+                              </div>
+                         </div>
+                    </section>
+                    <section class="section section_2 flex justify-center items-center h-screen bg-white">
+                         <h1>Section 4</h1>
+                    </section>
                </div>
           </main>
           <footer></footer>
