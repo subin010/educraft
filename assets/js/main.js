@@ -48,7 +48,7 @@ once(document.documentElement, "touchstart", function () {
           trigger: videoElem,
           start: "top 70%",
           end: "bottom",
-          markers: !0,
+          // markers: !0,
           onEnter: () => videoElem.play(),
           onEnterBack: () => videoElem.play(),
           onLeave: () => videoElem.pause(),
@@ -59,7 +59,7 @@ let video_timeline = gsap.timeline({
      scrollTrigger: {
           trigger: ".section_3",
           start: "top top",
-          markers: !0,
+          // markers: !0,
           scrub: !0,
           pin: !0,
           toggleClass: "acceso"
