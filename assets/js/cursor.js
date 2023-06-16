@@ -26,10 +26,10 @@ class Cursor {
       const targetPosition = {
         left:
         single.getBoundingClientRect().left +
-        single.getBoundingClientRect().width / 2,
+        single.getBoundingClientRect().width / 16,
         top:
         single.getBoundingClientRect().top +
-        single.getBoundingClientRect().height / 2 };
+        single.getBoundingClientRect().height / 16};
 
       const distance = {
         x: targetPosition.left - cursorPosition.left,
@@ -41,7 +41,7 @@ class Cursor {
       distance.x * distance.x + distance.y * distance.y);
 
       if (hypotenuse < triggerDistance) {
-        // Nikhil - look at this code to adjust the round cursor area sizing
+        // look at this code to adjust the round cursor area sizing
         TweenMax.to(this.el, 0.2, {
           left: targetPosition.left - Math.sin(angle) * hypotenuse / 2,
           top: targetPosition.top - Math.cos(angle) * hypotenuse / 2,
