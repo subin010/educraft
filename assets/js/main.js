@@ -1,5 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
 
+// you only need to define the configuration settings you want to CHANGE. Omitted properties won't be affected.
+gsap.config({
+     autoSleep: 60,
+     force3D: false,
+     nullTargetWarn: false,
+     trialWarn: false,
+     units: {left: "%", top: "%", rotation: "rad"}
+   });
 // smooth scrolling container
 const smoother = ScrollSmoother.create({
      // wrapper: ".body",
