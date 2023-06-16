@@ -24,10 +24,10 @@
 
 <body class="body font-[Poppins] text-sm box-border">
      <div class="scroll_smoother mx-auto">
-          <header class="max-w-screen-xl mx-auto">
+          <header class="max-w-screen-2xl mx-auto">
                <nav id="navbar"
-                    class="navbar absolute top-0 flex items-center justify-between gap-[20px] h-[20%] transition duration-300 pl-5 pr-5 sm:pl-10 sm:pr-10 md:pl-[6%] md:pr-[6%] 2xl:pl-20 2xl:pr-20  z-50 bg-opacity-50 w-full max-w-screen-xl mx-auto">
-                    <div class="flex justify-between items-center gap-32 max-w-screen-xl">
+                    class="navbar absolute top-0 flex items-center justify-between gap-[20px] h-[10%] transition duration-300 pl-5 pr-5 sm:pl-10 sm:pr-10 md:pl-[6%] md:pr-[6%] 2xl:pl-20 2xl:pr-20  z-50 bg-opacity-50 w-full max-w-screen-2xl mx-auto">
+                    <div class="flex justify-between items-center gap-32 max-w-screen-2xl">
                          <div class="logo_animation ">
                               <div class="header_logo flex gap-2 justify-center items-center relative">
                                    <img class="w-[100px]" src="../assets/images/brand/logo.png" alt="">
@@ -37,11 +37,13 @@
                               <a class="nav__links text-white h-[72px] grid place-items-center hover:text-primary transition-all duration-200"
                                    href="">Home</a>
                               <a class="nav__links text-white h-[72px] grid place-items-center hover:text-primary transition-all duration-200"
-                                   href="">Curriculam</a>
-                              <a class="nav__links text-white h-[72px] grid place-items-center hover:text-primary transition-all duration-200"
-                                   href="">Classes</a>
+                                   href="">Services</a>
                               <a class="nav__links text-white h-[72px] grid place-items-center hover:text-primary transition-all duration-200"
                                    href="">About Us</a>
+                              <a class="nav__links text-white h-[72px] grid place-items-center hover:text-primary transition-all duration-200"
+                                   href="">Blog</a>
+                              <a class="nav__links text-white h-[72px] grid place-items-center hover:text-primary transition-all duration-200"
+                                   href="">Contact</a>
                          </div>
                     </div>
                     <div class="flex justify-between items-center gap-8">
@@ -80,12 +82,12 @@
                               <div
                                    class="circle-bg bg-[#4D62CE] w-[564px] h-[564px] rounded-full absolute -bottom-60 left-8">
                               </div>
-                              <div class="bg-blur h-full">
+                              <div class="bg-blur h-full backdrop-blur-[210px]">
                                    <div class="noice-bg h-full  overflow-hidden">
                                         <div
-                                             class="wrapper-main flex pt-[8%] pl-20 pr-20 max-w-screen-xl m-auto h-full">
+                                             class="wrapper-main flex pt-[8%] pl-20 pr-20 max-w-screen-2xl m-auto h-full">
                                              <div class="flex flex-col w-1/2 justify-between mb-5">
-                                                  <div 
+                                                  <div
                                                        class="hero-tittle capitalize text-white text-6xl font-extrabold">
                                                        <span class="whitespace-pre-line">a place
                                                             every student
@@ -125,13 +127,25 @@
                                                   </div>
                                              </div>
                                              <div class="w-1/2 relative">
-                                                  <!-- <div class="bg_image bottom-[10%]"> -->
-                                                       <img class="max-h-full max-w-full w-[80%] 2xl:w-full block absolute right-[5%] 2xl:right-0 bottom-[10%]" src="../assets/images/bgstudent.png"
-                                                            alt="">
-                                                  <!-- </div> -->
-                                                  <div class="bg_student bottom-0 mx-auto">
-                                                       <img class="max-h-full block absolute bottom-0 left-[50%] -translate-x-[30%]" src="../assets/images/student.png"
-                                                            alt="">
+                                                  <div class="bg_image">
+                                                       <img class="max-h-full max-w-full w-[80%] 2xl:w-full block absolute right-[5%] 2xl:right-0 bottom-[10%]"
+                                                            src="../assets/images/bgstudent.png" alt="">
+                                                  </div>
+                                                  <div class="bg_student">
+                                                       <img class="max-h-full max-w-full block absolute bottom-0 left-[50%] -translate-x-[38%]"
+                                                            src="../assets/images/student.png" alt="">
+                                                  </div>
+                                                  <div class="other_particles">
+                                                       <img class="absolute -left-[35%] w-16"
+                                                            src="../assets/images/bell.png" alt="">
+                                                       <img class="absolute left-[20%] w-14 bottom-[85%]"
+                                                            src="../assets/images/Ellipse.png" alt="">
+                                                       <img class="absolute right-0 w-20 bottom-[90%]"
+                                                            src="../assets/images/robo.png" alt="">
+                                                       <img class="absolute bottom-[20%] -right-[2%] w-20"
+                                                            src="../assets/images/saturn.png" alt="">
+                                                       <img class="absolute bottom-[20%] left-[12%] w-24"
+                                                            src="../assets/images/pc.png" alt="">
                                                   </div>
                                              </div>
                                         </div>
@@ -158,8 +172,8 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
      <script src="../assets/pluggins/scrollsmoother/ss.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
-     <script src="../assets/js/cursor.js"></script>
      <script src="../assets/js/main.js"></script>
+     <script src="../assets/js/cursor.js"></script>
 </body>
 
 </html>
