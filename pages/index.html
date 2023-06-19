@@ -82,7 +82,7 @@
                               <div
                                    class="circle-bg bg-[#4D62CE] w-[564px] h-[564px] rounded-full absolute -bottom-60 left-8">
                               </div>
-                              <div class="bg-blur h-full backdrop-blur-[210px]">
+                              <div class="bg-blur h-full">
                                    <div class="noice-bg h-full  overflow-hidden">
                                         <div class="wrapper-main flex pt-32 pl-20 pr-20 max-w-screen-2xl m-auto h-full">
                                              <div class="flex flex-col w-1/2 justify-between mb-5">
@@ -152,45 +152,103 @@
                     <section class="section section_2 flex justify-center items-center h-screen bg-white">
                          <h1>Section 2</h1>
                     </section>
-                    <section class="section section_3 flex justify-center items-center h-screen content-center w-full flex-c overflow-hidden">
-                         <div class='contenitore-css-macbook'>
-                              <!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
+                    <section class="section section_3 h-screen relative">
+                         <dv
+                              class="panal_main flex justify-center items-center h-screen content-center w-full flex-c overflow-hidden">
+                              <div class='contenitore-css-macbook'>
+                                   <!-- Add or remove "with-glare" class. Removing the glare makes the screen interactive -->
 
-                              <div class="css-macbook">
-                                   <div class="macbook-display-position">
-                                        <div class="macbook-display">
-                                             <div class="macbook-screen-position">
-                                                  <div class="macbook-screen">
+                                   <div class="css-macbook">
+                                        <div class="macbook-display-position">
+                                             <div class="macbook-display">
+                                                  <div class="macbook-screen-position">
+                                                       <div class="macbook-screen">
+                                                            <video allowfullscreen poster="../assets/videos/hero.gif"
+                                                                 class="video-ux-design" playsinline="true"
+                                                                 webkit-playsinline="true" muted="muted">
+                                                                 <source src="../assets/videos/hero.mp4" id="sample"
+                                                                      type="video/mp4">
+                                                            </video>
+                                                            <!-- <img src="https://unsplash.imgix.net/photo-1418479631014-8cbf89db3431?fit=crop&fm=jpg&h=500&q=75&w=800" alt="example image" /> -->
+                                                            <!-- Image By André Freitas from unsplash.com -->
 
-                                                       <video allowfullscreen
-                                                            poster="../assets/videos/educraft_1.gif"
-                                                            class="video-ux-design" playsinline="true"
-                                                            webkit-playsinline="true" muted="muted">
-                                                            <source
-                                                                 src="../assets/videos/hero.mp4"
-                                                                 id="sample" type="video/mp4">
-                                                       </video>
-                                                       <!-- <img src="https://unsplash.imgix.net/photo-1418479631014-8cbf89db3431?fit=crop&fm=jpg&h=500&q=75&w=800" alt="example image" /> -->
-                                                       <!-- Image By André Freitas from unsplash.com -->
+                                                            <!-- Youtube - don't forget to remove glare -->
+                                                            <!-- <iframe width="960" height="480" src="https://www.youtube.com/emacbooked/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
+                                                            <!-- Notice: Youtube has some toruble with emacbooked players and gives consol errors -->
 
-                                                       <!-- Youtube - don't forget to remove glare -->
-                                                       <!-- <iframe width="960" height="480" src="https://www.youtube.com/emacbooked/GUEZCxBcM78?rel=0&amp;showinfo=0&amp;iv_load_policy=3&amp;controls=2" frameborder="0"></iframe> -->
-                                                       <!-- Notice: Youtube has some toruble with emacbooked players and gives consol errors -->
+                                                            <!-- Iframe, simple website - don't forget to remove glare -->
+                                                            <!-- <iframe src="http://example.com" frameborder="0"></iframe> -->
 
-                                                       <!-- Iframe, simple website - don't forget to remove glare -->
-                                                       <!-- <iframe src="http://example.com" frameborder="0"></iframe> -->
-
+                                                       </div>
                                                   </div>
                                              </div>
                                         </div>
+                                        <!-- <div class="macbook-body"></div>
+                                        <div class="macbook-bottom-cover"></div> -->
+                                        <div class="pa-hero-bg-overlay"></div>
+
+
                                    </div>
-                                   <div class="macbook-body"></div>
-                                   <div class="macbook-bottom-cover"></div>
-<div class="pa-hero-bg-overlay"></div>
                               </div>
-                         </div>
+                              <!-- <div class="desktopContent absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ">
+                                   <div class="desktopContentSection h-screen flex flex-col justify-center">
+                                        <div class="project_head mt-5 sm:mt-0">
+                                             <h1 class=" font-bold mb-5">For Kids
+                                                  ages</h1>
+                                        </div>
+                                        <div class="my-7 text-primary  font-bold">
+                                             <h1>2-14</h1>
+                                        </div>
+                                        <div class="project_data inline ">
+                                             <p class="">lorem ipsum text dummy.</p>
+                                        </div>
+                                        <div class="my-2 w-2/12">
+                                             <a class="btn_md primary_bg" href="">
+                                                  <span>Get Access </span>
+                                             </a>
+                                        </div>
+                                   </div>
+                                   <div class="desktopContentSection h-screen flex flex-col justify-center">
+                                        <div class="project_head mt-5 sm:mt-0">
+                                             <h1 class=" font-bold mb-5">For Kids
+                                                  ages</h1>
+                                        </div>
+                                        <div class="my-7 text-primary  font-bold">
+                                             <h1>2-14</h1>
+                                        </div>
+                                        <div
+                                             class="project_data inline text-xl md:text-[2.58vw] my-2 md:leading-[133%] leading-[150%]">
+                                             <p class="">lorem ipsum text dummy.</p>
+                                        </div>
+                                        <div class="my-2 w-2/12">
+                                             <a class="btn_md primary_bg" href="">
+                                                  <span>Get Access </span>
+                                             </a>
+                                        </div>
+                                   </div>
+                                   <div class="desktopContentSection h-screen flex flex-col justify-center">
+                                        <div class="project_head mt-5 sm:mt-0">
+                                             <h1 class=" font-bold mb-5">For Kids
+                                                  ages</h1>
+                                        </div>
+                                        <div class="my-7 text-primary  font-bold">
+                                             <h1>2-14</h1>
+                                        </div>
+                                        <div
+                                             class="project_data inline text-xl md:text-[2.58vw] my-2 md:leading-[133%] leading-[150%]">
+                                             <p class="">lorem ipsum text dummy.</p>
+                                        </div>
+                                        <div class="my-2 w-2/12">
+                                             <a class="btn_md primary_bg" href="">
+                                                  <span>Get Access </span>
+                                             </a>
+                                        </div>
+                                   </div>
+                              </div> -->
+                         </dv>
+
                     </section>
-                    <section class="section section_2 flex justify-center items-center h-screen bg-white">
+                    <section class="section section_4 flex justify-center items-center h-screen bg-white">
                          <h1>Section 4</h1>
                     </section>
                </div>
