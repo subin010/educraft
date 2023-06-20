@@ -1,0 +1,10 @@
+
+
+<style>
+        .curve-shape:hover{
+            fill: blue;
+        }
+        .curve-shape{
+            fill: #b9b9b9;
+        }
+    </style>

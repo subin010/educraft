@@ -1,0 +1,210 @@
+// $('div').click(function(){
+//      TweenMax.staggerTo("div", 1, {left:"632px", onComplete:goBack}, 0.5);
+//    });
+
+//   function goBack(){
+//        TweenMax.staggerTo("div", 1, {left:"0px"}, 0.5);
+//    };
+
+
+
+
+// const main = gsap.timeline();
+
+// main
+// .add(scroll_())
+//      .add(viewport())
+//  First Animation 
+// function scroll_() {
+console.log("first");
+let section = document.getElementsByClassName("section_3");
+const boxes = document.querySelectorAll(".desktopContentSection");
+
+const tl = gsap.timeline();
+boxes.forEach((box, i) => {
+     if (i !== 0) {
+          tl.fromTo(
+               box, {
+                    opacity: 0,
+                    yPercent: 100
+               }, {
+                    opacity: 1,
+                    yPercent: 0
+               },
+               i
+          );
+     }
+     if (i !== boxes.length - 1) {
+          tl.fromTo(
+               box, {
+                    opacity: 1,
+                    yPercent: 0
+               }, {
+                    opacity: 0,
+                    yPercent: -100,
+                    delay: 1
+               },
+               i
+          );
+     }
+});
+console.log(section);
+ScrollTrigger.create({
+     trigger: section,
+     pin: true,
+     //   markers: true,
+     start: "top top",
+     end: `+=${window.innerHeight * boxes.length}`,
+     animation: tl,
+     scrub: true,
+});
+// return t1;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Second Animation 
+
+let videoElem = document.querySelector(".video-ux-design");
+let src = videoElem.currentSrc || videoElem.src;
+
+
+once(document.documentElement, "touchstart", function () {
+
+          videoElem.play(), videoElem.pause();
+     }),
+     ScrollTrigger.create({
+          trigger: videoElem,
+          start: "top 70%",
+          end: "bottom",
+          // markers: !0,
+          onEnter: () => videoElem.play(),
+          onEnterBack: () => videoElem.play(),
+          onLeave: () => videoElem.pause(),
+          onLeaveBack: () => videoElem.pause()
+     });
+//videoElem.play();
+let video_timeline = gsap.timeline({
+     scrollTrigger: {
+          trigger: ".section_5",
+          start: "top top",
+          markers: !0,
+          scrub: !0,
+          pin: !0,
+          toggleClass: "acceso"
+     }
+});
+video_timeline
+     .fromTo(
+          ".macbook-display", {
+               backgroundColor: "transparent",
+               outline: "none"
+          }, {
+               backgroundColor: "#373435",
+               duration: 5,
+               outline: ".5px solid #fff",
+               delay: 10,
+          }
+     )
+     .fromTo(
+          ".pa-hero-bg-overlay", {
+               opacity: 1
+
+          }, {
+               opacity: 0,
+               duration: 1000,
+               delay: 1000
+          }
+     )
+     .to(
+          ".eduportal", {
+               opacity:0,
+               duration: 1000,
+               // delay: 0
+          }
+     )
+     .to(
+          ".css-macbook", {
+               scale: 0.7,
+               duration: 3000,
+               // delay: 0
+          }
+     )
+
+     .fromTo(
+          ".video-ux-design", {
+               height: "100%",
+               objectFit: "cover"
+          }, {
+               height: "-webkit-fill-available",
+               duration: 5
+          }
+     )
+     .fromTo(
+          ".macbook-screen", {
+               backgroundColor: "transparent"
+          }, {
+               backgroundColor: "#4b4b4d",
+               duration: 2,
+               delay: 5
+          }
+     );
+let video_tl = gsap.timeline({
+     defaults: {
+          duration: 3
+     },
+     scrollTrigger: {
+          trigger: videoElem,
+          start: "center center",
+          end: "+=600",
+          scrub: !0
+     }
+});
+once(videoElem, "loadedmetadata", () => {
+          video_tl.fromTo(
+               videoElem, {
+                    currentTime: 0.01
+               }, {
+                    currentTime: videoElem.duration || 1
+               }
+          );
+     }),
+     setTimeout(function () {
+          window.fetch &&
+               fetch(src)
+               .then((a) => a.blob())
+               .then((a) => {
+                    let b = URL.createObjectURL(a),
+                         c = videoElem.currentTime;
+                    once(document.documentElement, "touchstart", function () {
+                              videoElem.play(), videoElem.pause();
+                         }),
+                         videoElem.setAttribute("src", b),
+                         (videoElem.currentTime = c + 0.01);
+               });
+     }, 1e3);
+
+
+
+
+function once(a, b, c, d) {
+     var e = function () {
+          a.removeEventListener(b, e), c.apply(this, arguments);
+     };
+     return a.addEventListener(b, e, d), e;
+}
