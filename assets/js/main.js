@@ -15,12 +15,12 @@ gsap.config({
 // smooth scrolling container
 const smoother = ScrollSmoother.create({
      // wrapper: ".body",
-     // content: ".scroll_smoother",
-     smooth: 0.6,
+     content: ".scroll_smoother",
+     smooth: 0.9,
 
 });
 /* After Adding New Content to DOM */
-smoother.refresh();
+// smoother.refresh();
 
 document.querySelector('.button').onmousemove = function (e) {
 

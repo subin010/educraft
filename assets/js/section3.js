@@ -41,8 +41,8 @@ boxes.forEach((box, i) => {
                     yPercent: 0
                }, {
                     opacity: 0,
-                    yPercent: -100,
-                    delay: 1
+                    yPercent: -50,
+                    delay: 0.5
                },
                i
           );
@@ -103,7 +103,7 @@ let video_timeline = gsap.timeline({
      scrollTrigger: {
           trigger: ".section_5",
           start: "top top",
-          markers: !0,
+          // markers: !0,
           scrub: !0,
           pin: !0,
           toggleClass: "acceso"
@@ -121,6 +121,14 @@ video_timeline
                delay: 10,
           }
      )
+
+     .to(
+          ".eduportal", {
+               opacity: 0,
+               duration: 1000,
+               // delay: 0
+          }
+     )
      .fromTo(
           ".pa-hero-bg-overlay", {
                opacity: 1
@@ -128,24 +136,42 @@ video_timeline
           }, {
                opacity: 0,
                duration: 1000,
-               delay: 1000
-          }
-     )
-     .to(
-          ".eduportal", {
-               opacity:0,
-               duration: 1000,
-               // delay: 0
+               delay: 3000
           }
      )
      .to(
           ".css-macbook", {
                scale: 0.7,
-               duration: 3000,
-               // delay: 0
+               duration: 4000,
+               // delay: 1
           }
      )
 
+     .fromTo(
+          ".mobile_screen_postion", {
+               opacity: 0,
+               // stagger: 0.5,
+               // y: 100
+          }, {
+               duration: 5000,
+               opacity: 1,
+               delay: -100,
+               // y: 0
+          }
+     )
+     .fromTo(
+          ".lptitle_span", {
+               opacity: 0,
+               // stagger: 0.5,
+               y: 100
+          }, {
+               duration: 4000,
+               opacity: 1,
+               stagger: 4000,
+               delay: -300,
+               y: 0
+          }
+     )
      .fromTo(
           ".video-ux-design", {
                height: "100%",

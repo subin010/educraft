@@ -15,13 +15,16 @@
 }
 
 :root {
-     --primary-bg: "linear-gradient(225.49deg, #FF9900 -10.05%, #F06445 116.14%)"
+     --primary-bg: linear-gradient(225.49deg, #FF9900 -10.05%, #F06445 116.14%);
+     --primary-color: #FF9900;
 }
 
 .primary_bg {
-     background: linear-gradient(225.49deg, #FF9900 -10.05%, #F06445 116.14%);
+     background: var(--primary-bg);
 }
-
+.active_nav {
+     color: var(--primary-color);
+}
 .btn_md {
      padding: 10px 20px;
      gap: 12px;
@@ -331,4 +334,16 @@
      -moz-transform: translateZ(20px);
      transform: translateZ(20px);
      background: rgba(0,0,0,.78);
+ }
+ .course{
+     background: linear-gradient(225.49deg, #FF9900 -10.05%, #F06445 116.14%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+ .button1{
+     background: linear-gradient(225.49deg, #FF9900 -10.05%, #F06445 116.14%);
+ }
+ .git{
+     background: linear-gradient(225.49deg, #FF9900 -10.05%, #F06445 116.14%);
  }

@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     './pages/index.html',
+    "./pages/courses.html",
     "./pages/contact.html"
   ],
   theme: {
